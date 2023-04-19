@@ -1,0 +1,23 @@
+﻿<Window x:Class="UserLogin.LoginScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UserLogin"
+        mc:Ignorable="d"
+        Title="LoginScreen" Height="450" Width="800" Background="AliceBlue">
+   
+    <StackPanel Margin="20">
+        <Label Content="Login" Foreground="Black" FontSize="25" HorizontalAlignment="Center"></Label>
+        <Separator></Separator>
+        <Label Content="Username" Foreground="Black" FontSize="20"></Label>
+        <TextBox x:Name="txtUserName" Background="White" Foreground="Black" FontSize="18" >
+            
+          
+        </TextBox>
+        <Label Content="Password" Foreground="Black" FontSize="20"></Label>
+        <PasswordBox x:Name="txtPassword" Background="White" Foreground="Black" FontSize="18"></PasswordBox>
+        <Button x:Name="btnLogin" Content="Login" Margin="60 10"  Background="White" Foreground="Black" FontSize="18" Click="btnLogin_Click"></Button>
+        <Canvas Height="100"/>
+    </StackPanel>
+</Window>
